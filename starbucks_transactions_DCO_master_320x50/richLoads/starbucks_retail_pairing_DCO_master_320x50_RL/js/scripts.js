@@ -73,12 +73,12 @@ var Ad = {
     container.addEventListener('mouseover', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[1];
-      cta.style.borderColor = "#fff";
+       cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2]; // new
     });
     container.addEventListener('mouseout', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-      cta.style.borderColor = "#c2c2c2";
+      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f"; // new
     });
 
     headline2a.innerHTML = myFT.instantAds.F3_headline_txt;
@@ -93,7 +93,7 @@ var Ad = {
     cta.style.fontSize = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[0] + 'px';
     cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
     cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#fff";
+    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32452f"; //change
 
     logoImg.src = myFT.instantAds.logo_img;
     logo.appendChild(logoImg);
@@ -123,11 +123,11 @@ var Ad = {
             // textBlockF1a.style.marginTop = "0.7em";
         } else {
             textBlockF1a.style.marginTop = "0.1em";
-            textBlockF1a.style.paddingBottom = "8px";
+            textBlockF1a.style.paddingBottom = "2px";
         }
     } else {
 
-        styles.innerHTML = "#textBlockF2a > div:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: "+subHeadlingAdjust+"em; margin-top: -0.1em;letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
+        styles.innerHTML = "#textBlockF2a > div:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: "+subHeadlingAdjust+"em; margin-top: -0.1em;letter-spacing: 0.02em; font-family: 'LanderShort-Regular';}"
     }
     
     if (myFT.instantAds.F2_subHeadline_txt==""){
@@ -137,7 +137,7 @@ var Ad = {
             textBlockF2a.style.marginTop = "0.1em";
         }
     } else {
-        styles.innerHTML = "#textBlockF2a > div:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: "+subHeadlingAdjust+"em; margin-top: -0.1em;letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
+        styles.innerHTML = "#textBlockF2a > div:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: "+subHeadlingAdjust+"em; margin-top: -0.1em;letter-spacing: 0.02em; font-family: 'LanderShort-Regular';}"
     }    
 
     document.getElementsByTagName('body')[0].appendChild(styles);
@@ -199,9 +199,8 @@ var Ad = {
             a.innerHTML = Ad.changeSuperScript(aArray[i]);
             a.style.fontSize = p1[0]+"px";
             a.style.color = Ad.checkHex(p1[1]);
-            if (setBold==true) {
-                a.style.fontWeight = "700";
-                a.style.fontFamily = 'SoDoSans';
+            if (setBold==true) { 
+                a.style.fontFamily = 'LanderShort-Bold"';
             }
             t.appendChild(a);
             var lastcheck = a;

@@ -16,6 +16,17 @@
   src: url('../fonts/SoDoSans-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: "LanderShort-Regular"; 
+  src: url("../fonts/LanderShort-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "LanderShort-Bold"; 
+  src: url("../fonts/LanderShort-Bold.woff") format("woff");
+}
+
 /***********************
  * Ad styles
  **********************/
@@ -58,15 +69,13 @@ sup {
 }
 
 b {
-   font-family: 'SoDoSans', sans-serif;
-   font-weight: 700;
+  font-family: "LanderShort-Bold"; 
    line-height: 1.2em;
 }
 
 sbx {
   font-size: .5em;
-  font-family: 'SoDoSans', sans-serif;
-  font-weight: 700;
+  font-family: "LanderShort-Bold"; 
   letter-spacing: 0.3em;
   line-height: 1.9em;
   text-align: center;
@@ -165,27 +174,27 @@ sbx::after {
 #cta {
   font-family: 'SoDoSansRegular', sans-serif;
   position: relative;
-  padding: 3px;
+  padding: 5px 6px;
   white-space: nowrap;
-  border: 1px solid #c2c2c2;
-  border-radius: 3px;
+  border: 1px solid #32462f;
+  border-radius: 30px;
   letter-spacing: 0.08em;
   z-index: 99
 }
 
 .win #cta {
-  padding: 3px;
+  padding: 5px 6px;
 }
 
 @media all and (-ms-high-contrast:none) {
   #cta {
-    padding: 4px;
+    padding: 5px 6px;
   }
 
   /* IE10 */
   *::-ms-backdrop,
   #cta {
-    padding: 4px;
+    padding: 5px 6px;
   }
 
   /* IE11 */
@@ -193,26 +202,26 @@ sbx::after {
 
 @media only screen and (-webkit-device-pixel-ratio:1) {
   #cta {
-    padding: 4px;
+    padding: 5px 6px;
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   #cta {
-    padding: 4px;
+    padding: 5px 6px;
   }
 }
 
 @-moz-document url-prefix() {
   #cta {
-    padding: 4px;
+    padding: 5px 6px;
   }
 }
 
 #headlineCont {
-  left: 19px;
+  left: 18px;
   width: 144px;
-  font-family: 'SoDoSansRegular', sans-serif;
+  font-family: "LanderShort-Regular"; 
 }
 
 #headlineCont>div>span:first-child {
@@ -232,13 +241,14 @@ sbx::after {
   position: absolute;
   top: 0;
   left: 50px;
-  width: 228px;
+  width: 230px;
   height: 50px;
   padding: 0px;
   text-align: center;
 }
 
 #content>div {
+  margin-top: 2px;
   display: inline-block;
   vertical-align: top;
   position: absolute;

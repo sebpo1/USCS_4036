@@ -51,12 +51,12 @@ var Ad = {
     Ad.container.addEventListener('mouseover', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[1];
-      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#fff";
+      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] ; // new
     });
     Ad.container.addEventListener('mouseout', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#c2c2c2";
+      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // new
     });
 
     headline1.innerHTML = Ad.changeSuperScript(myFT.instantAds.F1_headline_txt);
@@ -69,8 +69,7 @@ var Ad = {
       if (myFT.instantAds.F2_headline1_txt.indexOf("<b>")>-1) {
         var adjuestText = myFT.instantAds.F2_headline1_txt.replace("<b>","").replace("</b>","").split('/').join('');
         headline2a.innerHTML = '<span>' + Ad.changeSuperScript(adjuestText).split('<br>').join('</span><span>') + '</span>';
-        headline2a.style.fontWeight = "700";
-        headline2a.style.fontFamily = 'SoDoSans';
+        headline2a.style.fontFamily = 'LanderShort-Bold';
       } else {        
         if (myFT.instantAds.F2_headline1_txt.indexOf("<br>") !== -1) {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br>').join('</span><span>') + '</span>';
@@ -79,7 +78,7 @@ var Ad = {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br/>').join('</span><span>') + '</span>';
         }
       }
-      styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative; } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; letter-spacing: 0.02em; margin-top: 3px; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative; } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; letter-spacing: 0.02em; margin-top: 3px; font-family: 'LanderShort-Regular';}"
     }
     else {
       headline2a.innerHTML = Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt);
@@ -87,7 +86,7 @@ var Ad = {
 
     headline2a.style.fontSize = myFT.instantAds.F2_headline1Txt_size_hex.split('|')[0] + 'px';
     headline2a.style.color = myFT.instantAds.F2_headline1Txt_size_hex.split('|')[1];
-    headline2a.style.marginBottom = "3px";
+    headline2a.style.marginBottom = "1px";
     // headline2a.style.marginBottom = (myFT.instantAds.F2_headline2_txt=="")?"0px":"5px";
 
 
@@ -98,7 +97,7 @@ var Ad = {
       else {
         headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br/>').join('</span><span>') + '</span>';
       }
-      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; position: relative; } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em; position: absolute; right: 0; letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; position: relative; } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em; position: absolute; right: 0; letter-spacing: 0.02em; font-family: 'LanderShort-Regular';}"
     }
 
     headline2b.style.fontSize = myFT.instantAds.F2_headline2Txt_size_hex.split('|')[0] + 'px';
@@ -108,7 +107,7 @@ var Ad = {
     cta.style.fontSize = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[0] + 'px';
     cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
     cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#c2c2c2";
+    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // change
 
     logoImg.src = myFT.instantAds.logo_img;
     logo.appendChild(logoImg);

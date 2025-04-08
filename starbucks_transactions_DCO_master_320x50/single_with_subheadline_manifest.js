@@ -6,7 +6,7 @@ FT.manifest({
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_retail_pairing_DCO_master_320x50_RL"
+      "src": "starbucks_retail_single_DCO_master_with_secondary_headline_320x50_RL"
     }
   ],
   "instantAds": [
@@ -33,7 +33,7 @@ FT.manifest({
     {
       "name": "F1_headline_txt",
       "type": "text",
-      "default": ""
+      "default": "Espresso Tradition"
     },
     {
       "name": "F1_headlineTxt_size_hex_glowHex",
@@ -43,12 +43,12 @@ FT.manifest({
     {
       "name": "F1_headline1_txt",
       "type": "text",
-      "default": "Bacon, Gouda & Egg<br/>Sandwich"
+      "default": ""
     },
     {
       "name": "F1_headline1Txt_size_hex",
       "type": "text",
-      "default": "9|#32462f"
+      "default": "9|#fff"
     },
     {
       "name": "F1_headline2_txt",
@@ -93,7 +93,7 @@ FT.manifest({
     {
       "name": "F2_subHeadline_txt",
       "type": "text",
-      "default": ""
+      "default": "Contains Dairy"
     },
     {
       "name": "F2_subHeadline_size_hex",
@@ -103,12 +103,12 @@ FT.manifest({
     {
       "name": "F3_headline_txt",
       "type": "text",
-      "default": "Morning makers"
+      "default": ""
     },
     {
       "name": "F3_headlineTxt_size_hex",
       "type": "text",
-      "default": "13|#32462f"
+      "default": "13|#fff"
     },
     {
       "name": "ctaTxt",
@@ -148,12 +148,12 @@ FT.manifest({
     {
       "name": "product1_img",
       "type": "image",
-      "default": "BaconGoudaEggSandwich_Green_320x50_PAIRING.png"
+      "default": "CaramelMacchiato_green_320x50.png"
     },
     {
       "name": "product2_img",
       "type": "image",
-      "default": "IcedBrownSugarOatmilkShakenEspresso_Green_320x50_PAIRING.png"
+      "default": "blank.gif"
     },
     {
       "name": "logo_img",
