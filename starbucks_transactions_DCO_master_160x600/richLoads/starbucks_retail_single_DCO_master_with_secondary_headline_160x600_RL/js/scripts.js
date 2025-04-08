@@ -1,7 +1,7 @@
 
 var Ad = {
 
-  width: 300,
+  width: 160,
   height: 600,
   container: document.getElementById('container'),
 
@@ -13,10 +13,10 @@ var Ad = {
     var headline1 = document.getElementById('headline-1-text');
     var headline2a = document.getElementById('headline-2a');
     var headline2b = document.getElementById('headline-2b');
-    var styles = document.createElement('style');
     var zoomed = document.getElementById('zoomed');
     var logoImg = document.createElement('img');
     var productImg = document.createElement('img');
+    var styles = document.createElement('style');
 
     if (window.navigator.userAgent.indexOf("Windows") != -1) {
       Ad.container.classList.add('win');
@@ -64,6 +64,8 @@ var Ad = {
     headline1.style.color = myFT.instantAds.F1_headlineTxt_size_hex_glowHex.split('|')[1];
     headline1.style.textShadow = '-1px -1px 0 '+ myFT.instantAds.F1_headlineTxt_size_hex_glowHex.split('|')[2] +', 1px -1px 0 '+ myFT.instantAds.F1_headlineTxt_size_hex_glowHex.split('|')[2] +', -1px 1px 0 '+ myFT.instantAds.F1_headlineTxt_size_hex_glowHex.split('|')[2] +', 1px 1px 0 '+ myFT.instantAds.F1_headlineTxt_size_hex_glowHex.split('|')[2];
 
+
+
     if (myFT.instantAds.F2_headline2_txt === "") {
       //AWN-20210408: Fix for <b> + <span> overlap
       if (myFT.instantAds.F2_headline1_txt.indexOf("<b>")>-1) {
@@ -71,16 +73,14 @@ var Ad = {
         headline2a.innerHTML = '<span>' + Ad.changeSuperScript(adjuestText).split('<br>').join('</span><span>') + '</span>';
         headline2a.style.fontWeight = "700";
         headline2a.style.fontFamily = 'SoDoSans';
-      } else {        
+      } else {
         if (myFT.instantAds.F2_headline1_txt.indexOf("<br>") !== -1) {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br>').join('</span><span>') + '</span>';
-        } 
-        else {
+        } else {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br/>').join('</span><span>') + '</span>';
         }
       }
-       // overwrited
-      styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; letter-spacing: 0.02em; line-height:1.6em; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative; } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; line-height: 2.2em; letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
     }
     else {
       headline2a.innerHTML = Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt);
@@ -88,22 +88,24 @@ var Ad = {
 
     headline2a.style.fontSize = myFT.instantAds.F2_headline1Txt_size_hex.split('|')[0] + 'px';
     headline2a.style.color = myFT.instantAds.F2_headline1Txt_size_hex.split('|')[1];
-    headline2a.style.marginBottom = (myFT.instantAds.F2_headline2_txt=="")?"0px":"5px";
+    headline2a.style.marginBottom = "0px";
 
 
     if (myFT.instantAds.F2_headline2_txt !== "") {
       if (myFT.instantAds.F2_headline2_txt.indexOf("<br>") !== -1) {
         headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br>').join('</span><span>') + '</span>';
-      } 
+      } else if (myFT.instantAds.F2_headline2_txt.indexOf("</br>") !== -1) {
+        headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('</br>').join('</span><span>') + '</span>';
+      }
       else {
         headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br/>').join('</span><span>') + '</span>';
       }
-      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; position: relative } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em; position: absolute; right: 0; letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; position: relative; } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em; position: absolute; right: 0; letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
     }
 
     headline2b.style.fontSize = myFT.instantAds.F2_headline2Txt_size_hex.split('|')[0] + 'px';
     headline2b.style.color = myFT.instantAds.F2_headline2Txt_size_hex.split('|')[1];
-    headline2b.style.marginBottom = (myFT.instantAds.F2_subHeadline_txt=="")?"0px":"5px";
+    headline2b.style.marginBottom = "0px";
 
     cta.innerHTML = myFT.instantAds.ctaTxt;
     cta.style.fontSize = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[0] + 'px';
@@ -119,7 +121,7 @@ var Ad = {
 
     border.style.borderColor = myFT.instantAds.border_hex;
 
-    zoomed.style.transform = 'translate(' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[0] + ', ' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[1] + ') scale(2.15)';
+    zoomed.style.transform = 'translate(' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[0] + ', ' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[1] + ') scale(2.6)';
 
     myFT.applyClickTag(cta, 2, myFT.instantAds.clickTag2_url);
     
@@ -160,7 +162,8 @@ var Ad = {
       str = str.replace("©","<sup>©</sup>");
       return str;
   }
-
 };
+
+
 
 myFT.on("instantads", Ad.addContent); //initialize ad once ready

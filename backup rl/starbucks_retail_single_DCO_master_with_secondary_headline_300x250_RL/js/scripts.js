@@ -2,7 +2,7 @@
 var Ad = {
 
   width: 300,
-  height: 600,
+  height: 250,
   container: document.getElementById('container'),
 
   addContent: function() {
@@ -13,10 +13,10 @@ var Ad = {
     var headline1 = document.getElementById('headline-1-text');
     var headline2a = document.getElementById('headline-2a');
     var headline2b = document.getElementById('headline-2b');
-    var styles = document.createElement('style');
     var zoomed = document.getElementById('zoomed');
     var logoImg = document.createElement('img');
     var productImg = document.createElement('img');
+    var styles = document.createElement('style');
 
     if (window.navigator.userAgent.indexOf("Windows") != -1) {
       Ad.container.classList.add('win');
@@ -51,12 +51,10 @@ var Ad = {
     Ad.container.addEventListener('mouseover', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[1];
-      cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];; // new
     });
     Ad.container.addEventListener('mouseout', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // new
     });
 
     headline1.innerHTML = Ad.changeSuperScript(myFT.instantAds.F1_headline_txt);
@@ -74,13 +72,11 @@ var Ad = {
       } else {        
         if (myFT.instantAds.F2_headline1_txt.indexOf("<br>") !== -1) {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br>').join('</span><span>') + '</span>';
-        } 
-        else {
+        } else {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br/>').join('</span><span>') + '</span>';
         }
       }
-       // overwrited
-      styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; letter-spacing: 0.02em; line-height:1.6em; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2a > span:last-child { display: block; } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: left;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em;letter-spacing: 0.02em;line-height:2.2em; font-family: 'SoDoSansRegular';}"
     }
     else {
       headline2a.innerHTML = Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt);
@@ -93,12 +89,12 @@ var Ad = {
 
     if (myFT.instantAds.F2_headline2_txt !== "") {
       if (myFT.instantAds.F2_headline2_txt.indexOf("<br>") !== -1) {
-        headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br>').join('</span><span>') + '</span>';
+        headline2b.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br>').join('</span><span>') + '</span>';
       } 
       else {
-        headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br/>').join('</span><span>') + '</span>';
+        headline2b.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline2_txt).split('<br/>').join('</span><span>') + '</span>';
       }
-      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; position: relative } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em; position: absolute; right: 0; letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
+      styles.innerHTML = "#headline-2b > span:last-child { display: inline-block; } #headline-2b > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: right;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block;margin-right: 1.14em; margin-top: -0.3em;letter-spacing: 0.02em; font-family: 'SoDoSansRegular';}"
     }
 
     headline2b.style.fontSize = myFT.instantAds.F2_headline2Txt_size_hex.split('|')[0] + 'px';
@@ -109,7 +105,7 @@ var Ad = {
     cta.style.fontSize = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[0] + 'px';
     cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
     cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32452f"; //new
+    cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#fff";
 
     logoImg.src = myFT.instantAds.logo_img;
     logo.appendChild(logoImg);
@@ -119,30 +115,25 @@ var Ad = {
 
     border.style.borderColor = myFT.instantAds.border_hex;
 
-    zoomed.style.transform = 'translate(' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[0] + ', ' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[1] + ') scale(2.15)';
+    zoomed.style.transform = 'translate(' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[0] + ', ' + myFT.instantAds.start_product1_offsetX_offsetY.split('|')[1] + ') scale(2.9)';
 
     myFT.applyClickTag(cta, 2, myFT.instantAds.clickTag2_url);
-    
+
     document.getElementsByTagName('body')[0].appendChild(styles);
 
     Ad.animate();
   },
 
   animate: function() {
-    TweenLite.from(document.getElementById('headline-1'), 0.5, {autoAlpha: 0, y: '240px', delay: 0.5});
-    TweenLite.from(document.getElementById('content'), 0.25, {autoAlpha: 0, delay: 3.75});
-    TweenLite.from(document.getElementById('headlineCont'), 0.25, {y: '30px', delay: 3.75});
+    TweenLite.from(document.getElementById('headline-1'), 0.25, {autoAlpha: 0, y: '20px', delay: 0.5});
+    TweenLite.from([document.getElementById('content'), document.getElementById('logo')], 0.05, {autoAlpha: 0, delay: 3.4});
+    //TweenLite.from(document.getElementById('content'), 1, {x: '50%', delay: 2.5, ease: Power2.easeInOut});
 
+    TweenLite.to(document.getElementById('headline-1'), 0.25, {autoAlpha: 0, y: '54px', delay: 2.5});
     TweenLite.to(document.getElementById('product'), 1, {
       x: myFT.instantAds.end_product1_offsetX_offsetY.split('|')[0], 
       y: myFT.instantAds.end_product1_offsetX_offsetY.split('|')[1], 
       ease: Power2.easeInOut, 
-      delay: 3
-    });
-    TweenLite.to(document.getElementById('headline-1'), 0.5, {
-      autoAlpha: 0, 
-      y: '240px',
-      ease: Power2.easeInOut,
       delay: 2.5
     });
     TweenLite.to(document.getElementById('zoomed'), 1, {
@@ -150,7 +141,7 @@ var Ad = {
       x: -(myFT.instantAds.start_product1_offsetX_offsetY.split('|')[0]), 
       y: -(myFT.instantAds.start_product1_offsetX_offsetY.split('|')[1]), 
       ease: Power2.easeInOut,
-      delay: 3
+      delay: 2.5
     });
   },
 
