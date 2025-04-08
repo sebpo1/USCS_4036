@@ -49,8 +49,8 @@ body {
 }
 
 b {
-  font-family: "SoDoSans", sans-serif;
-  font-weight: 700;
+  font-family: "LanderShort-Regular", sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -201,7 +201,7 @@ sup {
 }
 
 .win #cta {
-  padding: 9px 11px;
+  padding: 10px 10px 8px;
 }
 
 @media all and (-ms-high-contrast: none) {

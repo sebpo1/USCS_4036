@@ -54,7 +54,7 @@ body {
 }
 
 b {
-  font-family: "LanderShort-Bold"; 
+  font-family: "LanderShort-Regular"; 
 }
 
 img {
@@ -172,7 +172,8 @@ sup {
 */
 
 #cta {
-  font-family: 'SoDoSansRegular', sans-serif;
+  font-family: 'SoDoSans', sans-serif;
+font-weight: 500;
   position: relative; 
   text-align: center;
   padding: 5px 6px;

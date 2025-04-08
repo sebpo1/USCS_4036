@@ -65,15 +65,15 @@ sup {
 }
 
 b {
-  font-family: 'SoDoSans', sans-serif;
-  font-weight: 700;
+  font-family: 'LanderShort-Regular', sans-serif;
+  font-weight: 300;
   line-height: 1.2em;
 }
 
 sbx {
   font-size: .5em;
-  font-family: 'SoDoSans', sans-serif;
-  font-weight: 700;
+  font-family: 'LanderShort-Regular', sans-serif;
+  font-weight: 300;
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
@@ -187,7 +187,7 @@ sbx::after {
 }
 
 .win #cta {
-  padding: 9px 10px;
+  padding: 10px 10px 8px;
 }
 
 @media all and (-ms-high-contrast:none) {

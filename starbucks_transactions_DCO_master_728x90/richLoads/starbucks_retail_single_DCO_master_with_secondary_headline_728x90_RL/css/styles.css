@@ -184,7 +184,8 @@ sbx::after {
 }
 
 #cta {
-  font-family: 'SoDoSansRegular', sans-serif;
+  font-family: 'SoDoSans', sans-serif;
+font-weight: 500;
   position: relative;
   padding: 12px 14px 11px;
   white-space: nowrap;
@@ -244,4 +245,7 @@ sbx::after {
 .headlineBox {
   width:100%;
   text-align: center;
+}
+.mac.safari #cta{
+  padding: 10px 14px 11px;
 }

@@ -65,14 +65,14 @@ sup {
 }
 
 b {
-   font-family: 'SoDoSans', sans-serif;
+   font-family: 'LanderShort-Regular', sans-serif;
    font-weight: 700;
    line-height: 1.2em;
 }
 
 sbx {
   font-size: .5em;
-  font-family: 'SoDoSans', sans-serif;
+  font-family: 'LanderShort-Regular', sans-serif;
   font-weight: 700;
   letter-spacing: 0.075em;
   text-align: center;
@@ -131,7 +131,7 @@ sbx::after {
 #logo {
   position: absolute;
   width: 68px;
-  bottom: 25px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -185,7 +185,7 @@ sbx::after {
 }
 
 .win #cta {
-  padding: 12px 14px;
+  padding: 12px 14px 8px;
 }
 
 @media all and (-ms-high-contrast:none) {
@@ -212,7 +212,7 @@ sbx::after {
 
 #ctaCont {
   position: absolute;
-  bottom: 124px;
+  bottom: 126px;
   left: 50%;
   transform: translateX(-50%);
 }
