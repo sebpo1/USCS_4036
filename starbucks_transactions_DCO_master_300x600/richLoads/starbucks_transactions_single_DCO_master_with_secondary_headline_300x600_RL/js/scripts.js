@@ -51,12 +51,12 @@ var Ad = {
     Ad.container.addEventListener('mouseover', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[1];
-      cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];;
+      cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];; // new
     });
     Ad.container.addEventListener('mouseout', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";
+      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // new
     });
 
     headline1.innerHTML = Ad.changeSuperScript(myFT.instantAds.F1_headline_txt);
@@ -79,6 +79,7 @@ var Ad = {
           headline2a.innerHTML = '<span>' + Ad.changeSuperScript(myFT.instantAds.F2_headline1_txt).split('<br/>').join('</span><span>') + '</span>';
         }
       }
+       // overwrited
       styles.innerHTML = "#headline-2a > span:last-child { display: inline-block; position: relative } #headline-2a > span:last-child::after { content: '"+ Ad.changeSuperScript(myFT.instantAds.F2_subHeadline_txt) +"';color:"+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[1] +";text-align: center;font-size: "+ myFT.instantAds.F2_subHeadline_size_hex.split('|')[0] +"px;display: block; letter-spacing: 0.02em; line-height:1.6em; font-family: 'SoDoSansRegular';}"
     }
     else {
