@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 500;
+  src: url('../fonts/aSoDoSansSemiBold_f_5687.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 700;
+  src: url('../fonts/aSoDoSansBold_f_5686.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSansRegular';
+  font-weight: 300;
+  src: url('../fonts/SoDoSans-Regular.woff') format('woff');
+}
+
+/***********************
+ * Ad styles
+ **********************/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'SoDoSans', sans-serif;
+  cursor: pointer;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+sup {
+  /*position: absolute;
+  line-height: 1em;
+  margin-top: 0.8em;
+  font-size: 40%;*/
+  font-size: 0.4em;
+  vertical-align: top;
+  display: inline-block;
+}
+
+@-moz-document url-prefix() { 
+  sup {
+     /*margin-top: 0.55em;*/
+  }
+}
+
+b {
+   font-family: 'SoDoSans', sans-serif;
+   font-weight: 700;
+   line-height: 1.2em;
+}
+
+sbx {
+  font-size: .6em;
+  font-family: 'SoDoSans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+sbx::after {
+  content: "®";
+  position: relative;
+  top: 0.29em;
+  width: 0;
+  transform: scale(0.4);
+  display: inline-block;
+  vertical-align: super;
+}
+
+.mac.ff sbx::after {
+  top: 0.1em;
+}
+
+.mac.chrome sbx::after {}
+
+.mac.safari sbx::after {
+  top: 0.2em;
+}
+
+.win.ff sbx::after {
+  top: 0.115em;
+}
+
+.win.chrome sbx::after {
+  top: 0.25em;
+}
+
+.win.ie sbx::after {
+  top: 0.085em;
+}
+
+.ad-size {
+  width: 728px;
+  height: 90px;
+}
+
+#border {
+  position: relative;
+  border: 1px solid transparent;
+  z-index: 9;
+  pointer-events: none;
+}
+
+#zoomed {
+  position: absolute;
+  /*transform: scale(2.22) handled in JS now */;
+}
+
+#logo {
+  position: absolute;
+  width: 52px;
+  right: 23px;
+  top: 18px;
+}
+
+#headline-1 {
+  position: absolute;
+  width: 482px;
+  top: 50%;
+  left: 138px;
+  transform: translateY(-50%);
+  margin-top: -2px;
+  /*z-index: 1;*/
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#headline-2a {
+  margin-bottom: 2px;
+  line-height: 1.2em;
+}
+
+@media all and (-ms-high-contrast:none)
+{
+  #headline-2a  {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+  } /* IE10 */
+  *::-ms-backdrop, #headline-2a {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+  } /* IE11 */
+}
+
+#headline-2b {
+  margin-bottom: 2px;
+  line-height: 1.2em;
+}
+
+#product {
+  position: relative;
+  pointer-events: none;
+}
+
+#cta {
+  font-family: 'SoDoSansRegular', sans-serif;
+  position: relative;
+  padding: 9px 10px 8px;
+  white-space: nowrap;
+  border: 1px solid white;
+  border-radius: 5px;
+  letter-spacing: 0.08em;
+  z-index: 99
+}
+
+@media all and (-ms-high-contrast:none)
+{
+  #cta  {
+    padding: 12px 14px 5px;
+  } /* IE10 */
+  *::-ms-backdrop, #cta {
+    padding: 12px 14px 5px;
+  } /* IE11 */ 
+}
+
+#headlineCont {
+  left: 10px;
+  width: 331px;
+  font-family: 'SoDoSansRegular', sans-serif;
+}
+
+#headlineCont>div>span:first-child {
+  margin-top: 0;
+}
+
+#headlineCont>div>span {
+  display: block;
+  margin-top: 5px;
+}
+
+#ctaCont {
+  right: 32px;
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 148px;
+  width: 500px;
+  height: 90px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+#content > div {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.headlineBox {
+  width:100%;
+  text-align: center;
+}
