@@ -181,7 +181,7 @@ sbx::after {
 #cta {
   font-family: 'SoDoSans', sans-serif;
   font-weight: 500;
-  padding: 14px 23px 10px 21px;
+  padding: 14px 23px 10px 17px;
   white-space: nowrap;
   border: 1px solid white;
   border-radius: 20px;
@@ -198,13 +198,13 @@ sbx::after {
 
 @media all and (-ms-high-contrast:none) {
   #cta {
-    padding: 8px 12px !important;
+    /* padding: 8px 12px !important; */
   }
 
   /* IE10 */
   *::-ms-backdrop,
   #cta {
-    padding: 8px 12px !important;
+    /* padding: 8px 12px !important; */
   }
 
   /* IE11 */
