@@ -161,7 +161,8 @@ sup {
   font-family: "SoDoSans", sans-serif;
   position: absolute;
   left: 112px;
-  padding: 6px;
+  /* padding: 6px; */
+  padding: 10px 10px;
   white-space: nowrap;
   border: 1px solid white;
   border-radius: 20px;

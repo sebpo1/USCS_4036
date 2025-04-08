@@ -6,7 +6,7 @@ FT.manifest({
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_retail_pairing_DCO_master_300x250_RL/index.html"
+      "src": "starbucks_retail_pairing_DCO_master_300x250_RL"
     }
   ],
   "instantAds": [
