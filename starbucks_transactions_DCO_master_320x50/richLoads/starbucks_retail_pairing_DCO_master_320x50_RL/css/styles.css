@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 500;
+  src: url('../fonts/aSoDoSansSemiBold_f_5687.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 700;
+  src: url('../fonts/aSoDoSansBold_f_5686.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSansRegular';
+  font-weight: 300;
+  src: url('../fonts/SoDoSans-Regular.woff') format('woff');
+}
+
+@-moz-document url-prefix() { 
+  sup {
+     margin-top: 0.2em;
+  }
+}
+
+/***********************
+ * Ad styles
+ **********************/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'SoDoSans', sans-serif;
+  cursor: pointer;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+b {
+   font-family: 'SoDoSans', sans-serif;
+   font-weight: 700;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+sup {
+  /*line-height: 1em;
+  margin-top: 0.35em;
+  font-size: 50%;*/
+  font-size: 0.4em;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.abs {
+    position: absolute;
+}
+
+.ad-size {
+  width: 320px;
+  height: 50px;
+}
+
+.product-size {
+  width: 320px;
+  height: 50px;
+  transform-origin: top left;
+  position: absolute;
+}
+
+#border {
+  position: relative;
+  border: 1px solid transparent;
+  z-index: 9;
+  pointer-events: none;
+}
+
+#logo {
+  position: absolute;
+  width: 30px;
+  bottom: 6px;
+  left: 275px;
+}
+
+.textBlock {
+  overflow: hidden;
+  left: 85px;
+  width: 120px;
+  height: 50px;
+  padding: 10px 0px;
+}
+
+.textBlockH, .textBlockS {
+  text-align: center;
+}
+
+.textBlockH {
+}
+
+.textBlockS {
+  margin-top: 0.1em;
+}
+
+.headline {
+/*  font-weight: 700;*/
+}
+
+#textBlockF1, #textBlockF2, #textBlockF3 {
+    font-family: 'SoDoSansRegular', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+}
+
+.headline, .subheadline {
+  line-height: 1.1em;
+}
+
+.subheadline {
+  white-space: nowrap;
+}
+
+#textBlockF3 {
+  overflow: visible;
+}
+
+#headline-2a {
+/*  font-weight: 700;*/
+  line-height: 1.2em;
+  text-align: center;
+  /* margin-top: 0.2em; */
+}
+
+#product {
+  position: relative;
+  pointer-events: none;
+}
+
+#cta {
+/*  display: inline-block;*/
+/*  white-space: nowrap;*/
+/*  width: 55px;*/
+/*  height: 15px;*/
+/*  line-height: 15px;*/
+/*  text-align: center;*/
+/*  z-index: 99;*/
+}
+
+/*
+@-moz-document url-prefix() { 
+  #cta {
+     padding-top: 1px;
+  }
+}
+*/
+
+#cta {
+  font-family: 'SoDoSansRegular', sans-serif;
+  position: relative;
+  padding: 3px;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+  z-index: 99
+}
+
+.win #cta {
+  padding: 3px;
+}
+.mac .headline, .mac .subheadline {
+  line-height: 1.12em;
+}
+
+@media all and (-ms-high-contrast:none) {
+  #cta {
+    padding: 4px !important;
+  }
+
+  /* IE10 */
+  *::-ms-backdrop,
+  #cta {
+    padding: 4px!important;
+  }
+
+  /* IE11 */
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1) {
+  #cta {
+    padding: 4px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .iOS #cta {
+    padding: 4px;
+  }
+  
+    .android #cta {
+    padding: 5px 4px 3px 4px;
+    }
+}
+
+/*
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  #cta {
+    padding: 5px 4px 3px 4px;
+  }
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+  #cta {
+    padding: 5px 4px 3px 4px;
+  }
+}
+*/
+
+@-moz-document url-prefix() {
+  #cta {
+    padding: 4px;
+  }
+}
+
+#content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 50px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#ctaCont {
+/*
+  position: absolute;
+  top: 140px;
+  width: 100%;
+*/
+display: inline-block;
+line-height: 15px;
+}
+
+#headlineCont {
+/*  font-weight: 700;*/
+  line-height: 1em;
+  bottom: 23px;
+  position: absolute;
+  left: 85px;
+  width: 105px;
+  height: 18px;
+  overflow: hidden;
+  
+  font-family: 'SoDoSansRegular', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bottomcentering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+}

@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 500;
+  src: url('../fonts/aSoDoSansSemiBold_f_5687.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSans';
+  font-weight: 700;
+  src: url('../fonts/aSoDoSansBold_f_5686.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'SoDoSansRegular';
+  font-weight: 300;
+  src: url('../fonts/SoDoSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "LanderShort-Regular"; 
+  src: url("../fonts/LanderShort-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "LanderShort-Bold"; 
+  src: url("../fonts/LanderShort-Bold.woff") format("woff");
+}
+
+/***********************
+ * Ad styles
+ **********************/
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'SoDoSans', sans-serif;
+  cursor: pointer;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+sup {
+  /*position: absolute;
+  line-height: 1em;
+  margin-top: 0.8em;
+  font-size: 40%;*/
+  font-size: 0.4em;
+  vertical-align: top;
+  display: inline-block;
+}
+
+@-moz-document url-prefix() { 
+  sup {
+     /*margin-top: 0.55em;*/
+  }
+}
+
+b {
+  font-family: "LanderShort-Bold"; 
+   line-height: 1.2em;
+}
+
+sbx {
+  font-size: .5em;
+  font-family: "LanderShort-Bold"; 
+  letter-spacing: 0.3em;
+  line-height: 1.9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+sbx::after {
+  content: "®";
+  position: relative;
+  top: 0.36em;
+  width: 0;
+  transform: scale(0.4);
+  display: inline-block;
+  vertical-align: super;
+}
+
+.mac.ff sbx::after {
+  top: 0.085em;
+}
+
+.mac.chrome sbx::after {}
+
+.mac.safari sbx::after {
+  top: 0.2em;
+}
+
+.win.ff sbx::after {
+  top: 0.115em;
+}
+
+.win.chrome sbx::after {
+  top: 0.25em;
+}
+
+.win.ie sbx::after {
+  top: 0.09em;
+}
+
+.ad-size {
+  width: 320px;
+  height: 50px;
+}
+
+#border {
+  position: relative;
+  border: 1px solid transparent;
+  z-index: 9;
+  pointer-events: none;
+}
+
+#zoomed {
+  position: absolute;
+  /*transform: scale(2.22) handled in JS now */
+  ;
+}
+
+#logo {
+  position: absolute;
+  width: 29px;
+  right: 9px;
+  top: 10px;
+}
+
+#headline-1 {
+  position: absolute;
+  width: 188px;
+  top: 50%;
+  left: 77px;
+  transform: translateY(-50%);
+  /*margin-top: 1px;*/
+  /*z-index: 1;*/
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #1e3932;
+  text-shadow:
+    -1px -1px 0 transparent,
+    1px -1px 0 transparent,
+    -1px 1px 0 transparent,
+    1px 1px 0 transparent;
+}
+
+#headline-2a {
+  line-height: 1.2em;
+}
+
+#headline-2b {
+  margin-bottom: 1px;
+  line-height: 1.2em;
+}
+
+#product {
+  position: relative;
+  pointer-events: none;
+}
+
+#cta {
+  font-family: 'SoDoSansRegular', sans-serif;
+  position: relative;
+  padding: 3px;
+  white-space: nowrap;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+  z-index: 99
+}
+
+.win #cta {
+  padding: 3px;
+}
+
+@media all and (-ms-high-contrast:none) {
+  #cta {
+    padding: 4px;
+  }
+
+  /* IE10 */
+  *::-ms-backdrop,
+  #cta {
+    padding: 4px;
+  }
+
+  /* IE11 */
+}
+
+@media only screen and (-webkit-device-pixel-ratio:1) {
+  #cta {
+    padding: 4px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #cta {
+    padding: 4px;
+  }
+}
+
+@-moz-document url-prefix() {
+  #cta {
+    padding: 4px;
+  }
+}
+
+#headlineCont {
+  left: 24px;
+  width: 144px;
+  font-family: "LanderShort-Regular"; 
+}
+
+#headlineCont>div>span:first-child {
+  margin-top: 0;
+}
+
+#headlineCont>div>span {
+  display: block;
+  margin-top: 3px;
+}
+
+#ctaCont {
+  right: 6px
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 228px;
+  height: 50px;
+  padding: 0px;
+  text-align: center;
+}
+
+#content>div {
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.win #content>div {
+  /* margin-top: 1.5px; */
+}
+
+.headlineBox {
+  width: 100%;
+  text-align: center;
+}

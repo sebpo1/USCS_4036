@@ -1,19 +1,19 @@
 FT.manifest({
   "filename": "index.html",
-  "width": 300,
-  "height": 250,
+  "width": 320,
+  "height": 50,
   "clickTagCount": 2,
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_retail_single_DCO_master_300x250_RL"
+      "src": "starbucks_retail_single_DCO_master_320x50_RL"
     }
   ],
   "instantAds": [
     {
       "name": "start_product1_offsetX_offsetY",
       "type": "text",
-      "default": "-66%|46%"
+      "default": "0|0"
     },
     {
       "name": "end_product1_offsetX_offsetY",
@@ -33,12 +33,12 @@ FT.manifest({
     {
       "name": "F1_headline_txt",
       "type": "text",
-      "default": "Espresso<br/>Tradition"
+      "default": "Espresso Tradition"
     },
     {
       "name": "F1_headlineTxt_size_hex_glowHex",
       "type": "text",
-      "default": "26|#32462f|transparent"
+      "default": "13|#32462f|transparent"
     },
     {
       "name": "F1_headline1_txt",
@@ -48,7 +48,7 @@ FT.manifest({
     {
       "name": "F1_headline1Txt_size_hex",
       "type": "text",
-      "default": "16|#fff"
+      "default": "9|#fff"
     },
     {
       "name": "F1_headline2_txt",
@@ -58,7 +58,7 @@ FT.manifest({
     {
       "name": "F1_headline2Txt_size_hex",
       "type": "text",
-      "default": "16|#fff"
+      "default": "9|#fff"
     },
     {
       "name": "F1_subHeadline_txt",
@@ -68,17 +68,17 @@ FT.manifest({
     {
       "name": "F1_subHeadline_size_hex",
       "type": "text",
-      "default": "12|#fff"
+      "default": "9|#fff"
     },
     {
       "name": "F2_headline1_txt",
       "type": "text",
-      "default": "Caramel<br>Macchiato"
+      "default": "Caramel Macchiato"
     },
     {
       "name": "F2_headline1Txt_size_hex",
       "type": "text",
-      "default": "20|#32462f|transparent"
+      "default": "9|#32462f"
     },
     {
       "name": "F2_headline2_txt",
@@ -88,7 +88,7 @@ FT.manifest({
     {
       "name": "F2_headline2Txt_size_hex",
       "type": "text",
-      "default": "16|#fff"
+      "default": "9|#fff"
     },
     {
       "name": "F2_subHeadline_txt",
@@ -98,7 +98,7 @@ FT.manifest({
     {
       "name": "F2_subHeadline_size_hex",
       "type": "text",
-      "default": "6|#fff"
+      "default": "4|#fff"
     },
     {
       "name": "F3_headline_txt",
@@ -108,22 +108,22 @@ FT.manifest({
     {
       "name": "F3_headlineTxt_size_hex",
       "type": "text",
-      "default": "26|#fff"
+      "default": "13|#fff"
     },
     {
       "name": "ctaTxt",
       "type": "text",
-      "default": "Order Now"
+      "default": "ORDER NOW"
     },
     {
       "name": "ctaTxt_size_hex_hexHov",
       "type": "text",
-      "default": "10|#32462f|#fff"
+      "default": "5|#32462f|#fff"
     },
     {
       "name": "ctaBtn_hex_hexHov",
       "type": "text",
-      "default": "#fff|#000"
+      "default": "transparent|transparent"
     },
     {
       "name": "background_hex",
@@ -148,7 +148,7 @@ FT.manifest({
     {
       "name": "product1_img",
       "type": "image",
-      "default": "CaramelMacchiato_green_3x_300x250.png"
+      "default": "CaramelMacchiato_green_320x50.png"
     },
     {
       "name": "product2_img",
@@ -163,7 +163,7 @@ FT.manifest({
     {
       "name": "background_img",
       "type": "image",
-      "default": "FY25-SUM1-RM-Background_300x250.jpg"
+      "default": "FY25-SUM1-RM-Background_320x50.jpg"
     },
     {
       "name": "richload1",
