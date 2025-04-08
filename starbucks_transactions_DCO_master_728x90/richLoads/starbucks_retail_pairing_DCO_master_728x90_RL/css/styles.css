@@ -16,6 +16,18 @@
   src: url('../fonts/SoDoSans-Regular.woff') format('woff');
 }
 
+
+@font-face {
+  font-family: "LanderShort-Regular"; 
+  src: url("../fonts/LanderShort-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "LanderShort-Bold"; 
+  src: url("../fonts/LanderShort-Bold.woff") format("woff");
+}
+
 @-moz-document url-prefix() { 
   sup {
      margin-top: 0.2em;
@@ -43,8 +55,7 @@ body {
 }
 
 b {
-   font-family: 'SoDoSans', sans-serif;
-   font-weight: 700;
+  font-family: "LanderShort-Bold"; 
 }
 
 img {
@@ -112,9 +123,9 @@ sup {
 }
 
 #textBlockF1, #textBlockF2, #textBlockF3 {
-    font-family: 'SoDoSansRegular', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.03em;
+  font-family: "LanderShort-Regular", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
 }
 
 .headline {
@@ -156,17 +167,17 @@ sup {
 font-family: 'SoDoSansRegular', sans-serif;
     position: relative;
     display: inline-block;
-    padding: 10px 10px 7px;
+    padding: 12px 14px 11px;
     white-space: nowrap;
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 1px solid #32462f;
+    border-radius: 30px;
     letter-spacing: 0.08em;
     text-align: center;
     z-index: 99;
 }
 
 .mac.safari #cta{
-    padding: 8px 10px 9px !important;
+  padding: 12px 14px 11px;
 }
 
 @media all and (-ms-high-contrast:none)
@@ -174,12 +185,12 @@ font-family: 'SoDoSansRegular', sans-serif;
   #cta {
     height: auto;
 /*    line-height: 20px;*/
-    padding: 11px 14px 6px;
+    padding: 12px 14px 11px;
   } /* IE10 */
   *::-ms-backdrop, #cta {
     height: auto;
 /*    line-height: 20px;*/
-    padding: 11px 14px 6px;
+    padding: 12px 14px 11px;
   } /* IE11 */
 }
 
@@ -219,8 +230,7 @@ font-family: 'SoDoSansRegular', sans-serif;
 */
 }
 
-#headlineCont {
-  font-weight: 700;
+#headlineCont { 
   line-height: 1em;
   bottom: 41px;
   position: absolute;
@@ -228,7 +238,7 @@ font-family: 'SoDoSansRegular', sans-serif;
   width: 285px;
   height: 34px;
   overflow: hidden;
-  font-family: 'SoDoSansRegular', sans-serif;
+  font-family: "LanderShort-Regular", sans-serif;
   letter-spacing: 0.03em;
 }
 

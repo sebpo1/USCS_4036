@@ -6,7 +6,7 @@ FT.manifest({
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_retail_single_DCO_master_with_secondary_headline_728x90_RL"
+      "src": "starbucks_retail_pairing_DCO_master_728x90_RL"
     }
   ],
   "instantAds": [
@@ -18,7 +18,7 @@ FT.manifest({
     {
       "name": "end_product1_offsetX_offsetY",
       "type": "text",
-      "default": "0|0"
+      "default": "-12|2"
     },
     {
       "name": "start_product2_offsetX_offsetY",
@@ -33,7 +33,7 @@ FT.manifest({
     {
       "name": "F1_headline_txt",
       "type": "text",
-      "default": "Lorem Ipsum Dolor Sit Amet"
+      "default": ""
     },
     {
       "name": "F1_headlineTxt_size_hex_glowHex",
@@ -43,7 +43,7 @@ FT.manifest({
     {
       "name": "F1_headline1_txt",
       "type": "text",
-      "default": ""
+      "default": "Vanilla Bean Custard Danish"
     },
     {
       "name": "F1_headline1Txt_size_hex",
@@ -73,7 +73,7 @@ FT.manifest({
     {
       "name": "F2_headline1_txt",
       "type": "text",
-      "default": "Iced Black Tea.<br>Lemonade"
+      "default": "New Iced Cherry Chai"
     },
     {
       "name": "F2_headline1Txt_size_hex",
@@ -93,22 +93,22 @@ FT.manifest({
     {
       "name": "F2_subHeadline_txt",
       "type": "text",
-      "default": "Contains Dairy"
+      "default": ""
     },
     {
       "name": "F2_subHeadline_size_hex",
       "type": "text",
-      "default": "14|#32462f"
+      "default": "6|#fff"
     },
     {
       "name": "F3_headline_txt",
       "type": "text",
-      "default": ""
+      "default": "Flavorful moments"
     },
     {
       "name": "F3_headlineTxt_size_hex",
       "type": "text",
-      "default": "25|#fff"
+      "default": "20|#32462f"
     },
     {
       "name": "ctaTxt",
@@ -148,12 +148,12 @@ FT.manifest({
     {
       "name": "product1_img",
       "type": "image",
-      "default": "CaramelMacchiato_green_728x90.png"
+      "default": "VanillaBeanCustardDanish_Green_728x90_PAIRING.png"
     },
     {
       "name": "product2_img",
       "type": "image",
-      "default": "blank.gif"
+      "default": "IcedCherryChai_Green_728x90_PAIRING.png"
     },
     {
       "name": "logo_img",

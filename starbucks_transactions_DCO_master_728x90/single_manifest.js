@@ -6,7 +6,7 @@ FT.manifest({
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_retail_single_DCO_master_with_secondary_headline_728x90_RL"
+      "src": "starbucks_retail_pairing_DCO_master_728x90_RL"
     }
   ],
   "instantAds": [
@@ -93,12 +93,12 @@ FT.manifest({
     {
       "name": "F2_subHeadline_txt",
       "type": "text",
-      "default": "Contains Dairy"
+      "default": ""
     },
     {
       "name": "F2_subHeadline_size_hex",
       "type": "text",
-      "default": "14|#32462f"
+      "default": "6|#fff"
     },
     {
       "name": "F3_headline_txt",
