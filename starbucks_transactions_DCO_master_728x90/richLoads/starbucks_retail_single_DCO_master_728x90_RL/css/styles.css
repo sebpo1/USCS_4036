@@ -41,7 +41,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'SoDoSans', sans-serif;
+  font-family: 'LanderShort-Regular', sans-serif;
   cursor: pointer;
   line-height: 1.2em;
   letter-spacing: 0.03em;
@@ -57,7 +57,7 @@ sup {
   line-height: 1em;
   margin-top: 0.8em;
   font-size: 40%;*/
-  font-size: 0.4em;
+  font-size: 1em;
   vertical-align: top;
   display: inline-block;
 }
@@ -154,11 +154,13 @@ sbx::after {
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
+  font-family: 'LanderShort-Regular', sans-serif;
 }
 
 #headline-2a {
   margin-bottom: 2px;
   line-height: 1.2em;
+  font-family: 'LanderShort-Regular', sans-serif;
 }
 
 @media all and (-ms-high-contrast:none)
@@ -176,6 +178,7 @@ sbx::after {
 #headline-2b {
   margin-bottom: 2px;
   line-height: 1.2em;
+  font-family: 'LanderShort-Regular', sans-serif;
 }
 
 #product {
@@ -247,4 +250,5 @@ sbx::after {
 .headlineBox {
   width:100%;
   text-align: center;
+  font-family: 'LanderShort-Regular', sans-serif;
 }

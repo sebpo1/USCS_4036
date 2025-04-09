@@ -6,44 +6,44 @@ FT.manifest({
   "richLoads": [
     {
       "name": "richload1",
-      "src": "starbucks_transactions_single_DCO_master_with_secondary_headline_300x600_RL"
+      "src": "starbucks_retail_pairing_DCO_master_300x600_RL"
     }
   ],
   "instantAds": [
     {
       "name": "start_product1_offsetX_offsetY",
       "type": "text",
-      "default": "0|43%"
+      "default": "40|100"
     },
     {
       "name": "end_product1_offsetX_offsetY",
       "type": "text",
-      "default": "0|0"
+      "default": "60|265"
     },
     {
       "name": "start_product2_offsetX_offsetY",
       "type": "text",
-      "default": "0|0"
+      "default": "5|-80"
     },
     {
       "name": "end_product2_offsetX_offsetY",
       "type": "text",
-      "default": "0|0"
+      "default": "0|113"
     },
     {
       "name": "F1_headline_txt",
       "type": "text",
-      "default": "Teatime, anytime"
+      "default": ""
     },
     {
       "name": "F1_headlineTxt_size_hex_glowHex",
       "type": "text",
-      "default": "25|#32462f|transparent"
+      "default": "25|#fff|transparent"
     },
     {
       "name": "F1_headline1_txt",
       "type": "text",
-      "default": ""
+      "default": "Impossible™ Breakfast Sandwich"
     },
     {
       "name": "F1_headline1Txt_size_hex",
@@ -73,12 +73,12 @@ FT.manifest({
     {
       "name": "F2_headline1_txt",
       "type": "text",
-      "default": "Iced Lavender Cream<br/>Oatmilk Matcha<style>#headline-2a > span:last-child::after{ -webkit-font-smoothing: antialiased;font-weight: lighter;opacity: 0.86;}</style>"
+      "default": "Iced™<br/>Matcha Latte"
     },
     {
       "name": "F2_headline1Txt_size_hex",
       "type": "text",
-      "default": "21|#32462f"
+      "default": "20|#32462f"
     },
     {
       "name": "F2_headline2_txt",
@@ -93,17 +93,17 @@ FT.manifest({
     {
       "name": "F2_subHeadline_txt",
       "type": "text",
-      "default": "Contains Dairy"
+      "default": ""
     },
     {
       "name": "F2_subHeadline_size_hex",
       "type": "text",
-      "default": "17|#32462f"
+      "default": "7|#fff"
     },
     {
       "name": "F3_headline_txt",
       "type": "text",
-      "default": "Flavorful moments"
+      "default": "Impossible™ Breakfast Sandwich"
     },
     {
       "name": "F3_headlineTxt_size_hex",
@@ -148,12 +148,12 @@ FT.manifest({
     {
       "name": "product1_img",
       "type": "image",
-      "default": "IcedLavenderCreamOatmilkMatcha_Green_3x_300x600.png"
+      "default": "SpicyFalafelPocket_Green_600x600_PAIRING.png"
     },
     {
       "name": "product2_img",
       "type": "image",
-      "default": "IcedLavenderCreamOatmilkMatcha_Green_3x_300x600.png"
+      "default": "IcedMatchaTeaLatte_Green_600x600_PAIRING.png"
     },
     {
       "name": "logo_img",

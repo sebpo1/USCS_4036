@@ -151,7 +151,7 @@ if(myFT.instantAds.F2_subHeadline_txt !== ""){
 
   changeSuperScript : function(str) {
       str = str.replace("®","<sup>®</sup>");
-      str = str.replace("™","<sup style='margin-top: 0.6em;'>™</sup>");
+      str = str.replace("™","<sup>™</sup>");
       str = str.replace("©","<sup>©</sup>");
       return str;
   }

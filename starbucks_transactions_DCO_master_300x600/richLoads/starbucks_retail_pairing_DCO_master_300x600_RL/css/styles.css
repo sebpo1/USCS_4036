@@ -59,10 +59,7 @@ img {
 }
 
 sup {
-  /*line-height: 1em;
-  margin-top: 0.35em;
-  font-size: 50%;*/
-  font-size: 0.4em;
+  font-size: 1em;
   vertical-align: top;
   display: inline-block;
 }
@@ -261,3 +258,11 @@ sup {
   -ms-flex-align: center;
           align-items: center;
 }
+
+/* tm {
+  font-size: 1em;
+  position: relative;
+  bottom: 0.15em;
+  /* margin-left: 0px; */
+  color: #2c2c2c;
+} */

@@ -47,11 +47,7 @@ img {
 }
 
 sup {
-  /*position: absolute;
-  line-height: 1em;
-  margin-top: 0.8em;
-  font-size: 40%;*/
-  font-size: 0.4em;
+  font-size: 1em;
   vertical-align: top;
   display: inline-block;
 }

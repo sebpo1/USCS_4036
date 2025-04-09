@@ -18,7 +18,7 @@
 
 
 @font-face {
-  font-family: "LanderShort-Regular"; 
+  font-family: 'LanderShort-Regular';
   src: url("../fonts/LanderShort-Regular.woff") format("woff");
 }
 
@@ -48,14 +48,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'SoDoSans', sans-serif;
+  font-family: 'LanderShort-Regular', sans-serif;
   cursor: pointer;
   line-height: 1.2em;
   letter-spacing: 0.05em;
 }
 
 b {
-  font-family: "LanderShort-Regular"; 
+  font-family: "LanderShort-Bold"; 
 }
 
 img {
@@ -67,7 +67,7 @@ sup {
   /*line-height: 1em;
   margin-top: 0.35em;
   font-size: 50%;*/
-  font-size: 0.4em;
+  font-size: 1em;
   vertical-align: top;
   display: inline-block;
 }
@@ -108,6 +108,7 @@ sup {
   /* width: 285px; */
   width: 324px;
   height: 90px;
+  font-family: 'LanderShort-Regular', sans-serif;
   /*padding: 15px 0px;*/
 }
 
@@ -134,12 +135,15 @@ sup {
 
 .headline, .subheadline {
   line-height: 1.1em;
+  font-family: 'LanderShort-Regular', sans-serif;
+  
 }
 
 #textBlockF3 {
   top: 15px;
   height: 60px;
   overflow: visible;
+  font-family: 'LanderShort-Regular', sans-serif;
 }
 
 #headline-2a {
@@ -147,6 +151,7 @@ sup {
   line-height: 1.2em;
   text-align: center;
   margin-top: -0.2em;
+  font-family: 'LanderShort-Regular', sans-serif;
 }
 
 #product {
@@ -274,3 +279,6 @@ font-weight: 500;
   -ms-flex-align: center;
           align-items: center;
 }
+/* #textBlockF1, #textBlockF2, #textBlockF3 {
+  font-family: 'LanderShort-Regular', sans-serif;
+} */
