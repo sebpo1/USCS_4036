@@ -51,12 +51,12 @@ var Ad = {
     Ad.container.addEventListener('mouseover', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[1];
-      cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];; // new
+      //cta.style.borderColor = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[2];; // new
     });
     Ad.container.addEventListener('mouseout', function() {
       cta.style.color = myFT.instantAds.ctaTxt_size_hex_hexHov.split('|')[1];
       cta.style.backgroundColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[0];
-      cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // new
+      //cta.style.borderColor = myFT.instantAds.ctaBtn_hex_hexHov.split('|')[2] || "#32462f";  // new
     });
 
     headline1.innerHTML = Ad.changeSuperScript(myFT.instantAds.F1_headline_txt);

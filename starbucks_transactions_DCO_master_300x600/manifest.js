@@ -13,37 +13,37 @@ FT.manifest({
     {
       "name": "start_product1_offsetX_offsetY",
       "type": "text",
-      "default": "40|100"
+      "default": "-2%|35%"
     },
     {
       "name": "end_product1_offsetX_offsetY",
       "type": "text",
-      "default": "60|265"
+      "default": "0|0"
     },
     {
       "name": "start_product2_offsetX_offsetY",
       "type": "text",
-      "default": "5|-80"
+      "default": "0|0"
     },
     {
       "name": "end_product2_offsetX_offsetY",
       "type": "text",
-      "default": "0|113"
+      "default": "0|0"
     },
     {
       "name": "F1_headline_txt",
       "type": "text",
-      "default": ""
+      "default": "Espresso<br/>Tradition"
     },
     {
       "name": "F1_headlineTxt_size_hex_glowHex",
       "type": "text",
-      "default": "25|#fff|transparent"
+      "default": "30|#32462f|transparent"
     },
     {
       "name": "F1_headline1_txt",
       "type": "text",
-      "default": "Impossible™ Breakfast Sandwich"
+      "default": ""
     },
     {
       "name": "F1_headline1Txt_size_hex",
@@ -63,17 +63,17 @@ FT.manifest({
     {
       "name": "F1_subHeadline_txt",
       "type": "text",
-      "default": ""
+      "default": "Iced Brown Suger<br/>OatMilk<br/>Shaken Expresso"
     },
     {
       "name": "F1_subHeadline_size_hex",
       "type": "text",
-      "default": ""
+      "default": "12|#32462f"
     },
     {
       "name": "F2_headline1_txt",
       "type": "text",
-      "default": "Iced™<br/>Matcha Latte"
+      "default": ""
     },
     {
       "name": "F2_headline1Txt_size_hex",
@@ -83,7 +83,7 @@ FT.manifest({
     {
       "name": "F2_headline2_txt",
       "type": "text",
-      "default": ""
+      "default": "Iced Brown Suger<br/>OatMilk<br/>Shaken Expresso"
     },
     {
       "name": "F2_headline2Txt_size_hex",
@@ -103,12 +103,12 @@ FT.manifest({
     {
       "name": "F3_headline_txt",
       "type": "text",
-      "default": "Impossible™ Breakfast Sandwich"
+      "default": ""
     },
     {
       "name": "F3_headlineTxt_size_hex",
       "type": "text",
-      "default": "20|#32462f"
+      "default": "20|#fff"
     },
     {
       "name": "ctaTxt",
@@ -123,7 +123,7 @@ FT.manifest({
     {
       "name": "ctaBtn_hex_hexHov",
       "type": "text",
-      "default": "|" 
+      "default": "|" //#1e3932|#fff
     },
     {
       "name": "background_hex",
@@ -148,12 +148,12 @@ FT.manifest({
     {
       "name": "product1_img",
       "type": "image",
-      "default": "SpicyFalafelPocket_Green_600x600_PAIRING.png"
+      "default": "CaramelMacchiato_green_3x_300x600.png"
     },
     {
       "name": "product2_img",
       "type": "image",
-      "default": "IcedMatchaTeaLatte_Green_600x600_PAIRING.png"
+      "default": "blank.gif"
     },
     {
       "name": "logo_img",

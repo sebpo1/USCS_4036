@@ -123,7 +123,7 @@ FT.manifest({
     {
       "name": "ctaBtn_hex_hexHov",
       "type": "text",
-      "default": "#fff|#000"
+      "default": "transparent|#32462f"
     },
     {
       "name": "background_hex",
